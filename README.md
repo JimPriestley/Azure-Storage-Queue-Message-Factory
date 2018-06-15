@@ -1,11 +1,14 @@
-d# Introduction 
+# Introduction 
+
 This a sample class library for using the Azure Storage Queue service. It includes methods for sending and receiving strings and objects as queue messages.
 
 # Getting Started
+
 1.	This sample is built in .NET v 4.62 in Visual Studio 2017, but can be backported without change to older versions of .NET and VS that are supported by the Microsoft WindowsAzure.Storage nuget package.
 2.	This sample was built and tested with WindowsAzure.Storage nuget package version 9.10
 
 # Azure Storage Queues
+
 Azure Storage Queues are different from Service Bus, in that the require the messages to be idempotent.
 A message that says the new value is 7 is a valid idempotent message. A message that says add 7 to the current total, is not a valid idempotent message.
 
@@ -16,6 +19,7 @@ Azure Storage Queues make a best effort at order, and if you have multiple liste
 Based on the lower cost of Storage Queues versus Service Bus or Event Hubs, I often recommend it in distributed systems architectures moving to Azure PaaS, as long as we can verify that the messages meet the idempotent requirement.
 
 # Contributing
+
 I welcome feedback and contributions on this sample.
 
 Opportunities for extending this class include:
@@ -24,9 +28,9 @@ Opportunities for extending this class include:
 
 # License
 
-MIT License
+**MIT License**
 
-Copyright (c) 2018 Jim Priestley
+*Copyright (c) 2018 Jim Priestley*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
